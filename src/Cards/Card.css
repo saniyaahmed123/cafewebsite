@@ -1,0 +1,308 @@
+.promo-section {
+    padding: 4rem 2rem;
+    background-color: #FFFFFF;
+}
+
+.promo-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+@media (max-width: 900px) {
+    .promo-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.promo-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: #F7F5F0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+
+.promo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.promo-card-img-wrap {
+    overflow: hidden;
+}
+
+.promo-card-img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.promo-card:hover .promo-card-img {
+    transform: scale(1.03);
+}
+
+.promo-card-body {
+    padding: 1.75rem 1.5rem 1.1rem;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.promo-card-title {
+    font-family: 'Rockwell', 'Courier Prime', serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #102A43;
+    line-height: 1.35;
+    text-align: center;
+    max-width: 22ch;
+    margin: 0 auto 0.75rem auto;
+}
+
+.promo-card-subtitle {
+    font-family: system-ui, sans-serif;
+    font-weight: 300;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #7B93A8;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 88%;
+}
+
+.promo-card-footer {
+    margin-top: auto;
+    display: flex;
+    align-items: stretch;
+    background-color: #EBE7DF;
+    border-top: 1px solid #D9D4C7;
+}
+
+.promo-footer-action {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem 0.5rem;
+    font-family: "Archivo", sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #102A43;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.promo-footer-action:hover {
+    opacity: 0.65;
+}
+
+.promo-footer-divider {
+    width: 1px;
+    background-color: #D9D4C7;
+    margin: 0.75rem 0;
+}
+
+.promo-icon-badge {
+    width: 26px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid #102A43;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+.promo-icon-badge.round {
+    border-radius: 50%;
+}
+
+.promo-icon {
+    width: 14px;
+    height: 14px;
+}/* Full-height vertical divider line between buttons */
+.promo-footer-divider {
+    width: 1px;
+    background-color: #D9D4C7;
+    margin: 0; /* Ensures full height touching top and bottom borders */
+    align-self: stretch;
+}
+
+/* Cleaner button touch target & flex ordering */
+.promo-footer-action {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.85rem 0.5rem;
+    font-family: "Archivo", sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #102A43;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}.promo-section {
+    padding: 4rem 2rem;
+    background-color: #FFFFFF;
+}
+
+.promo-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+@media (max-width: 900px) {
+    .promo-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.promo-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: #F7F5F0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+
+.promo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.promo-card-img-wrap {
+    overflow: hidden;
+}
+
+.promo-card-img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.promo-card:hover .promo-card-img {
+    transform: scale(1.03);
+}
+
+.promo-card-body {
+    padding: 1.75rem 1.5rem 1.1rem;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.promo-card-title {
+    font-family: 'Rockwell', 'Courier Prime', serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #102A43;
+    line-height: 1.35;
+    text-align: center;
+    max-width: 22ch;
+    margin: 0 auto 0.75rem auto;
+}
+
+.promo-card-subtitle {
+    font-family: system-ui, sans-serif;
+    font-weight: 300;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #7B93A8;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 88%;
+}
+
+.promo-card-footer {
+    margin-top: auto;
+    display: flex;
+    align-items: stretch;
+    background-color: #EBE7DF;
+    border-top: 1px solid #D9D4C7;
+}
+
+.promo-footer-action {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.85rem 0.5rem;
+    font-family: "Archivo", sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #102A43;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.promo-footer-action:hover {
+    opacity: 0.65;
+}
+
+.promo-footer-divider {
+    width: 1px;
+    align-self: stretch;
+    background-color: #D9D4C7;
+    margin: 0;
+}
+
+.promo-icon-badge {
+    width: 26px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid #102A43;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+.promo-icon-badge.round {
+    border-radius: 50%;
+}
+
+.promo-icon {
+    width: 14px;
+    height: 14px;
+}.promo-card-title {
+    font-family: 'Rockwell', 'Courier Prime', serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #102A43;
+    line-height: 1.3;
+    text-align: center;
+    max-width: 22ch;
+    margin: 0 auto 0.75rem auto;
+}
+
+.promo-card-subtitle {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 400;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #334E68;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 90%;
+}
