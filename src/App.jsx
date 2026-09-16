@@ -6,6 +6,7 @@ import Cards from "./Cards/Cards";
 import Section from "./section_1/Section";
 import Footer from "./Footer/Footer";
 
+
 function App() {
  return (
     <>

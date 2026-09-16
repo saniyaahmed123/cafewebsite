@@ -1,5 +1,5 @@
 import "./Navbar.css";
-
+import Button from '../Button/Button'
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top matches-matcha">
@@ -24,11 +24,12 @@ function Navbar() {
             <li className="nav-item">
               <a className="nav-link active" aria-current="page" href="#">Menu</a>
             </li>
-           
+
           </ul>
           <form className="d-flex search-box-wrapper" role="search">
             <input className="form-control me-2" type="search" placeholder="Search sweet treats..." aria-label="Search" />
-            <button className="btn btn-outline-success" type="submit">Search</button>
+            <Button text="contact" />
+
           </form>
         </div>
       </div>

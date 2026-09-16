@@ -1,15 +1,15 @@
-function Card({ title, subtitle, image }) {
+const Card = (props) => {
     return (
         <>
             <div className="promo-card">
                 <div className="promo-card-img-wrap">
-                    <img src={image} className="promo-card-img" alt={title} />
+                    <img src={props.image} className="promo-card-img" alt={props.title} />
                 </div>
                 <div className="promo-card-body">
-                    <h3 className="promo-card-title">{title}</h3>
-                    <p className="promo-card-subtitle">{subtitle}</p>
+                    <h3 className="promo-card-title">{props.title}</h3>
+                    <p className="promo-card-subtitle">{props.subtitle}</p>
                 </div>
-                <div className="promo-card-footer">
+                <div className="promo-card-footer">``
                     <a href="#order" className="promo-footer-action">
                         <span className="promo-icon-badge">
                             <svg className="promo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
