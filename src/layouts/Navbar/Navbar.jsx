@@ -1,5 +1,6 @@
 import "./Navbar.css";
-import Button from '../Button/Button'
+import Button from '../../components/Button/Button'
+import { Link, NavLink } from 'react-router-dom'
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top matches-matcha">
@@ -8,21 +9,21 @@ function Navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a className="navbar-brand" href="#">
+          <Link className="navbar-brand" to="/">
             <span style={{ marginRight: "6px" }}>🍵</span><span className="brand-accent">Café</span>
-          </a>
+          </Link>
           <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">Home</a>
+              <NavLink className="nav-link" to="/" end>Home</NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">About</a>
+              <NavLink className="nav-link" to="/about">About</NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">Contact</a>
+              <a className="nav-link" href="#">Contact</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">Menu</a>
+              <a className="nav-link" href="#">Menu</a>
             </li>
 
           </ul>

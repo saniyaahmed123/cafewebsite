@@ -1,25 +1,17 @@
-import Navbar from "./Navbar/Navbar";
-// import Card from "./Card/Card.jsx";
-import "./Card/Card.css"
-import Hero from "./Header/Header";
-import Cards from "./Cards/Cards";
-import Section from "./section_1/Section";
-import Footer from "./Footer/Footer";
-
+// import React from 'react'
+import Home from './pages/Home'
+import About from './pages/About'
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
- return (
-    <>
-      <Navbar />
-      <Hero />
-      <Cards />
-      <Section />
-      <Footer />
-    
-
-    </>
+  return (
+    <div>
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route path="/about" element={<About />}/>
+      </Routes>
+    </div>
   )
 }
-export default App;
 
-    
+export default App

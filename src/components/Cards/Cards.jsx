@@ -1,8 +1,8 @@
 import './Card.css'
 import Card from '../Card/Card'
-import p1 from '../assets/p1.png'
-import p2 from '../assets/p2.png'
-import p3 from '../assets/p3.png'
+import p1 from '../../assets/p1.png'
+import p2 from '../../assets/p2.png'
+import p3 from '../../assets/p3.png'
 
 const Cards = () => {
     const products = [

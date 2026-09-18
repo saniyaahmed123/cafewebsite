@@ -1,0 +1,105 @@
+.about-hero-section {
+    background-color: #1e293b;
+    /* Deep rich background theme matching the image */
+    color: #f6f1e4;
+    padding: 5rem 3rem;
+    position: relative;
+    overflow: hidden;
+    background-image: url('../../assets/hero-banner.png');
+    padding-top: 160px
+}
+
+.about-hero-container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.about-hero-text-col {
+    padding-right: 2.5rem;
+}
+
+.about-hero-title {
+    font-family: "Archivo", "Helvetica Neue", sans-serif;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.01em;
+}
+
+.about-hero-description {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    opacity: 0.9;
+    margin-bottom: 1.5rem;
+    color: #e2e8f0;
+}
+
+.about-hero-link {
+    font-family: "Archivo", "Helvetica Neue", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #C9A876 !important;
+    /* Soft gold accent color */
+    transition: opacity 0.2s ease;
+    text-decoration: none
+}
+
+.about-hero-link:hover {
+    opacity: 0.8;
+}
+
+
+/* Right side image container styling */
+
+.about-hero-image-col {
+    display: flex;
+    justify-content: center;
+}
+
+.about-hero-card {
+    width: 100%;
+    max-width: 750px;
+    height: 430px;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.about-hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Responsive adjustments for tablets and mobile */
+
+@media (max-width: 991px) {
+    .about-hero-section {
+        padding: 3rem 1.5rem;
+    }
+    .about-hero-text-col {
+        padding-right: 0;
+        margin-bottom: 2.5rem;
+        text-align: left;
+    }
+    .about-hero-title {
+        font-size: 2rem;
+    }
+    .about-hero-card {
+        height: 300px;
+    }
+}
+
+@font-face {
+    font-family: 'Special Elite';
+    src: url('../../assets/fonts/SpecialElite.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+.about-hero-title {
+    font-family: 'Special Elite';
+}

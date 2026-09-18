@@ -1,5 +1,5 @@
 import './Section.css'
-import sec1 from '../assets/sec1.png'
+import sec1 from '../../assets/sec1.png'
 
 function Section() {
     return (
